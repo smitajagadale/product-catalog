@@ -12,7 +12,7 @@ export class Edit extends Component {
     render() {
         return (
          <div>
-              <ProductForm editData={this.editData} history={this.props.history} id={this.id}/>
+              <ProductForm editData={this.editData} history={this.props.history} id={this.id} action={"edit"}/>
           </div>
         );
     }

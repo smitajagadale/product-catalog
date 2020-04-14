@@ -5,7 +5,7 @@ export class Create extends Component {
     render() {
         return (
           <div>
-              <ProductForm history={this.props.history}/>
+              <ProductForm history={this.props.history} action={"create"} />
           </div>
         );
     }

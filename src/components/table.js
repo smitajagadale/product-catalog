@@ -15,7 +15,7 @@ class ProductsTable extends React.Component {
 
   renderTableRows = () => {
     return this.props.data.map(row => (
-      <tr>
+      <tr key={row.id}>
         <td>{row.id}</td>
         <td>{row.name}</td>
         <td>{row.manufacturer}</td>
@@ -32,7 +32,7 @@ class ProductsTable extends React.Component {
   render() {
     return (
       <div>
-        <table class="table table-hover">
+        <table className="table table-hover">
           <thead>
             <tr>
               <th scope="col">Id</th>

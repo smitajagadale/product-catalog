@@ -18,7 +18,7 @@ class ProductForm extends React.Component {
             const {name, manufacturer, processor, price} = this.props.editData
             this.setState({
                 name, 
-                manufacturer, 
+                manufacturer,  
                 processor, 
                 price
             })
@@ -39,7 +39,7 @@ class ProductForm extends React.Component {
             return;
         }
         createRowData(this.state, this.props.id);
-        this.props.history.push('/');
+        this.props.history.push(`/?type=${this.props.action}&outcome=success`);
     }
 
     validateFormData = () => {

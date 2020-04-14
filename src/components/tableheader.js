@@ -23,7 +23,7 @@ class TableHeader extends React.Component {
         return (
             <div>
                 <nav className="navbar navbar-dark bg-primary justify-content-between">
-                    <a className="text-warning h3">Product Catalogue</a>
+                    <p className="text-white h3">Product Catalogue</p>
                     <form className="form-inline">
                         <input className="form-control mr-sm-2" type="search" id="search" onChange={this.handleOnChange} placeholder="Search" />
                         <button className="btn btn-success" onClick={this.handleOnSearch} type="submit">Search</button>
